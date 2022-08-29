@@ -1,0 +1,655 @@
+*{
+    font-family: century gothic;
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+    
+}
+section[id]{
+    scroll-margin-top: 70px;
+}
+.container{
+    background-color: white;
+    
+    width: 100%;
+    max-width: 2400px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(23,auto);
+}
+.container .header{
+    height: 23px;
+    color: white;
+    overflow: hidden;
+    background-color: #BC4106;
+    grid-column-start: 1;
+    grid-column-end: -1;
+}
+.container .header div{
+    
+    margin-right: 7%;
+    gap: 20px;
+    justify-content: flex-end;
+    display: flex;
+}
+.container .header div img{
+    padding: 2px;
+    width: 18px;
+    height: 18px;
+    filter: drop-shadow(0 0 0 white) ;
+}
+.container .header div p{
+    
+    color: #ffffff;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-left: -12px;
+    margin-top: 2px;
+}
+
+.menu{
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    grid-column-start: 1;
+    grid-column-end: -1;
+    margin: 60px;
+    gap:20vh
+}
+.menu-opciones{
+    
+    grid-column-start: 2;
+    grid-column-end: -1;
+    display: flex;
+    gap: 4vh;
+    
+}
+.container .menu img{
+    justify-content: flex-start;
+    min-height: 50px;
+    max-height: 100px;
+}
+.menu-opciones a{
+    color: #BC4106;
+    font-size: 22px;
+    font-weight:bold;
+    text-decoration: none;
+    margin: 0px;
+}
+.radian-img{
+    grid-column-start: 1;
+    grid-column-end: -1;
+    grid-row: 3 / 4;
+    background-color: white;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    height: 67vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: linear-gradient(40deg, hsla(5, 91%, 46%, 0.581), hsla(63, 100%, 51%, 0.423)), url(../img/cover.png);
+}
+
+
+.radian-img-div{
+    height: 400px;
+    width:  950px;
+    margin-right: 40px;
+    margin-top:90px;
+    color: white;
+
+    font-size:50px;
+    text-align: right;
+    font-weight:bolder;
+}
+.words{
+    margin-top: 13%;
+    margin-bottom: 23px;
+    font-size: 28px;
+    font-weight:none;
+    text-align: right;
+    align-items: baseline;
+    justify-content: right;
+}
+.container .acerca-de-nosotros{
+    
+    font-size: 20px;
+    display: flex;
+    margin: 100px;
+    grid-column: 1/-1;
+}
+.container .acerca-de-nosotros div{
+    margin-left: 90px;
+    margin-top: -93px;
+}
+.container .acerca-de-nosotros img{
+    filter: brightness(50%);
+    margin-right: 3vh;
+    margin-left: 118px;
+}
+.container .acerca-de-nosotros .words{
+    font-weight: bold;
+    color: #BC4106;
+    margin-bottom: 10px;
+    text-align: left;
+    justify-content: left;
+    font-size: 37px;
+}
+.nuestros-valores{
+    margin-left:100px;
+    grid-column-start: 1;
+    grid-column-end: -1;
+    grid-row: 5 / 9;
+    
+}
+.container .nuestros-valores .words{
+    text-align: left;
+    margin-left: 100px;
+    margin-top: -43px;
+    margin-bottom: 10px;
+    color: #e3a317;
+    font-weight: bold;
+    font-size: 34px;
+}
+.container .nuestros-valores .valores .card{
+    background-color: rgb(241, 241, 241);
+    width: 35vh;
+    height: 80vh;
+    
+    text-align: center;
+
+}
+.container .nuestros-valores .valores{
+    display: flex;
+    margin: 100px;
+    justify-content: center;
+    gap: 70px;
+}
+.container .nuestros-valores .valores .card .imgBx img{
+    width: 83px;
+    margin-top: -34px;
+    margin-bottom: 12px;
+}
+.card-text{
+    font-size: 20px;
+    margin: 30px;
+}
+.card-title{
+    margin-bottom: -20px;
+    font-size: 20px;
+    color: #BC4106;
+    font-weight: bold;
+}
+.visio-mision{
+    background-color: #BC4106;
+    color: white;
+    padding: 40px;
+    padding-right: 150px;
+    grid-column-start: 1;
+    grid-column-end: -1;
+    grid-row: 9;
+    
+    
+}
+.visio-mision .visio-mision-s{
+    margin-left: 150px;
+    margin-right: 90px;
+}
+.visio-mision .visio-mision-s .title-visio-mision{
+    font-size: 20px;
+    margin-bottom: -6px;
+    font-weight: bold;
+    margin-bottom: 23px;
+}
+.visio-mision-s{
+    display: flex;
+    gap: 40px;
+}
+
+
+.que-hacemos{
+    grid-column-start: 1;
+    grid-column-end: -1;
+    grid-row: 10/11;
+    margin: 20px;
+    margin-left: 183px;
+    margin-right: 183px;
+    max-width: 1500px;
+    min-width: 900px;
+    overflow: hidden;
+    height: 300px;
+    width: 1500px;
+}
+.que-hacemos .title{
+    color: #BC4106;
+    font-size: 34px;
+    margin-bottom: 53px;
+    font-weight: bold;
+}
+.que-hacemos .lista{
+    display: flex;
+    margin-top: -42px;
+    color: #BC4106;
+    gap: 260px;
+    font-size: 21px;
+}
+.materials{
+    grid-column-end: -1;
+    grid-column-start: 1;
+    grid-row: 11/13;
+    margin-bottom: 8%;
+    margin-right: 150px;
+    margin-left: 210px;
+    margin-top: 100px;
+}
+
+.body-materials .border{
+    border: 1px solid #e3a317;
+    margin-top: 10px;
+    display: flex;
+}
+.body-materials .border .item-materials{
+    margin-left: 40px;
+    width: 60%;
+    font-size: 18px;
+}
+.img-exemple{
+    justify-content: flex-end;
+    width: 440px;
+    margin-left: 150px;
+}
+.title-materials-second{
+    margin-top: 12px;
+    font-size: 35px;
+    color: #D97110;
+    font-weight: bold;
+    margin-left: -20px;
+}
+.img-border{
+    text-align: left;
+    justify-items: left;
+    justify-content: left;
+    width: 50px;
+    height: 50px;
+}
+.materials .title-materials{
+    font-size: 40px;
+    color: #D97110;
+    font-weight: bold;
+    margin-bottom: -3px;
+    margin-top: -60px;
+}
+.casos-de-estudio{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row: 1 span;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    
+    border: 1px solid #714d00;
+    background-color: rgb(236, 236, 236);
+    height: 574px;
+}
+.casos-de-estudio-2-text .title,
+.casos-de-estudio .title{
+    font-size: 45px;
+    color: #BC4106;
+    font-weight: bold;
+}
+.casos-de-estudio .body-text{
+    font-size:20px;
+    
+}
+.casos-de-estudio div{
+    margin: 40px;
+    
+}
+.casos-de-estudio-1{
+    
+    
+    font-size: 35px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    height: 574px;
+}
+
+.casos-de-estudio-1-text{
+    font-weight: bold;
+    border: 1px solid #714d00;
+    height: 100%;
+}
+
+.casos-de-estudio-1 img{
+    height: 100%;
+    filter: brightness(50%);
+    border: 1px solid #714d00;
+}
+.casos-de-estudio-2{
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    width: 100%;
+    height: 574px;
+    min-height: 200px;
+    border: 1px solid #714d00;
+}
+.casos-de-estudio-2-text{
+    background-color: rgb(236, 236, 236);
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 16px;
+    border: 1px solid #714d00;
+}
+.casos-de-estudio-2-text .title{
+    margin-top: 32px;
+    margin-bottom: 33px;
+    font-size: 20px;
+    text-align: center;
+    margin-right: 150px;
+    
+}
+.casos-de-estudio-2-text div img{
+    margin-right: 100px;
+    
+}
+.casos-de-estudio-2-img{
+    
+    height: 400px;
+    filter: brightness(50%);
+}
+.casos-de-estudio-2-img img{
+    width: 100%;
+    border: 1px solid #714d00;
+}
+.nuestros-productos{
+    margin: 8%;
+    margin-left: 11%;
+    margin-bottom: -10%;
+}
+.nuestros-productos div .piezas-de-poliuretano{
+    border-top: 3px solid #eaeaea;
+    
+}
+.nuestros-productos-2 .filas-img-3,
+.nuestros-productos-2 .filas-img-2,
+.piezas-de-poliuretano .filas-img{
+    margin: 1%;
+    margin-left: -23px;
+    display: flex;
+}
+
+.nuestros-productos .title{
+    margin-left: -12px;
+    font-size: 45px;
+    color: #BC4106;
+    
+    font-weight: bold;
+}
+.nuestros-productos div .title{
+    margin-left: 0;
+    font-size: 45px;
+    font-weight: 300;
+    color: #D97110;
+    
+}
+.m-buutton{
+    margin-bottom: 2%;
+}
+.filas-img-2{
+    height: 100%;
+    width: 100%;
+    
+    
+}
+.piezas-de-poliuretano .filas-img img{
+    height: 100%;
+    width: 200px;
+    margin: 20px;
+}
+.piezas-de-poliuretano .filas-img-2 img{
+    
+    margin: 30px;
+}
+.piezas-de-poliuretano .filas-img-3 img{
+    height: 100%;
+    width: 100%;
+    margin: 30px;
+}
+.contactanos{
+    grid-column: span 2;
+    grid-row: span 2;
+    height: 750px;
+    overflow: hidden;
+    max-height: 750px;
+    
+    background-color: #FDD005;
+    color: black;
+}
+.contactanos .contenedor{
+    margin-left: 10%;
+    width: 500px;
+}
+.contactanos > div{
+    margin:50px;
+}
+.contactanos .title{
+    font-size: 35px;
+    color: #BC4106;
+    font-weight: bold;
+}
+.contactanos .sub-title{
+    font-size: 25px;
+    font-weight: bold;
+}
+.contactanos .text{
+    font-size: 18px;
+}
+.contactanos div .contact{
+    margin-top: 50px;
+}
+.contactanos div .contact .title{
+    font-size: 25px;
+}
+.contactanos div .contact .text-contact{
+    color: #BC4106;
+    font-weight: bold;
+    display: flex;
+    gap: 14px;
+    align-items: center;
+    height: 34px;
+    
+}
+
+.social-networks{
+    margin-top: 40px;
+    width: 100px;
+}
+.container-social-img{
+    display: flex;
+    margin-left: -14px;
+}
+.social-networks-img{
+    background-color: #BC4106;
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 10%;
+    margin-top: 7px;
+}
+.social-networks-img img{
+    width: 30px;
+    margin-top: 10px;
+}
+.contactanos form{
+    margin-top: 130px;
+    margin-left: 150px;
+    width: 600px;
+}
+.contactanos form div{
+    
+    font-size: 20px;
+    margin: 30px;
+    
+}
+.contactanos form div label{
+    width: 100%;
+    
+}
+.contactanos form div input{
+    width: 600px;
+    height: 30px;
+    border: 0px;
+    border-radius: 8px;
+}
+.contactanos form .numeros-telefonos{
+    margin-left: 0px;
+}
+.contactanos form .form-group{
+    
+    width: 600px;
+    display: flex;
+    margin: 30px;
+}
+.contactanos form .numeros-telefonos input{
+    
+    width: 280px;
+    height: 30px;
+    
+}
+.contactanos form .opinions input{
+    height: 150px;
+}
+
+.contactanos form .opinions .text-forms{
+    margin-right: -60px;
+    width: 600px;
+    text-align: end;
+    float: right;
+}
+.contactanos form .send{
+    border: 0px;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    background-color: #BC4106;
+    margin-left: 30px;
+    height: 35px;
+    width: 200px;
+}
+.footer{
+    margin-top: 2%;
+    height: 300px;
+    display: flex;
+    background-image: linear-gradient(40deg, rgb(247, 226, 40), hsla(19, 94%, 38%));
+}
+.footer .footer-1{
+    
+    width: 340px;
+    height: 200px;
+    margin: 90px;
+}
+
+.footer .footer-1 img{
+    padding-top: 15px;
+}
+.footer .footer-1 p{
+    margin-bottom: -14px;
+}
+.footer .footer-2{
+    width: 300px;
+    margin-top: 5vh;
+    margin-left: 31%;
+    display: flex;
+    
+}
+
+.footer .footer-2 div a{
+    display: block;
+    margin-bottom: 15px;
+    color: white;
+    font-size: 20px;
+    font-weight:normal;
+    text-decoration: none;
+    
+}
+.footer .footer-img{
+    width: 500px;
+}
+.footer-img-relative{
+    position: relative;
+    margin-left: 38vh;
+    
+}
+.footer-img-relative-img{
+    width: 140px;
+    transition: 13s;
+}
+.footer-img-relative-img:local-link{
+    transition: 13s;
+}
+.footer-img-absolute{
+    position: absolute;
+    margin: 30px;
+    margin-left: 54px;
+}
+
+.footer .footer-img div img{
+    position: absolute;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.grid-start-1-end-1{
+    grid-column-start: 1;
+    grid-column-end: -1;
+}
+.grid-column-span-1{
+    grid-column: span 1;
+}
+.grid-column-span-2{
+    grid-column: span 2;
+}
+
+.grid-column-row-1{
+    grid-row: span 1;
+}
+.grid-column-row-2{
+    grid-row: span 2;
+}
+
+
+
+.color{
+    background-color: black;
+    color: white;
+}
+
+
+@media screen and (max-width:768px){
+    
+}
